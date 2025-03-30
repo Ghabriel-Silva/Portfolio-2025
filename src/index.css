@@ -1,0 +1,511 @@
+
+/*Importação font pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+/*Configurações globais*/
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+/*Primitve topografia*/
+:root{
+  --font-family-inter-family: "Inter", sans-serif;
+  --font-size-10: 130px;
+  --font-size-1: 61px;
+  --font-size-2: 49px;
+  --font-size-3: 39px;
+  --font-size-4: 31px;
+  --font-size-5: 25px;
+  --font-size-6: 20px;
+  --font-size-7: 16px;
+  --font-weight-light: 300;
+  --font-size-8: 14px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-size-9: 10px;
+  --font-weight-bolder: 800;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --letter-spacing-letterspacing-tight: -2;
+  --letter-spacing-letterspacing-normal: 0;
+  --letter-spacing-letterspacing-wide: 5;
+  --bolder: 800;
+  --bold: 700;
+  --regular: 400;
+  --light: 300;
+  --line-height-auto: "auto";
+}
+
+
+/*Primitive Radius*/
+:root{
+  --numberscale-radius-3xs: 2px;
+  --numberscale-radius-2xs: 4px;
+  --numberscale-radius-xs: 6px;
+  --numberscale-radius-s: 8px;
+  --numberscale-radius-m: 12px;
+  --numberscale-radius-l: 16px;
+  --numberscale-radius-xl: 20px;
+  --numberscale-radius-2xl: 24px;
+  --numberscale-radius-3xl: 32px;
+  --numberscale-radius-4xl: 40px;
+  --numberscale-radius-full: 99px;
+}
+
+/*Primitive colors*/
+
+:root{
+  --neutral-950: #050505;
+  --neutral-900: #0A0A0A;
+  --neutral-800: #141414;
+  --neutral-700: #1F1F1F;
+  --neutral-600: #292929;
+  --neutral-500: #333333;
+  --neutral-400: #5C5C5C;
+  --neutral-300: #858585;
+  --neutral-200: #ADADAD;
+  --neutral-100: #D6D6D6;
+  --neutral-50: #EBEBEB;
+  --warning-950: #161104;
+  --warning-900: #302508;
+  --warning-800: #614A0F;
+  --warning-700: #916F17;
+  --warning-600: #BD901E;
+  --warning-500: #DFAE36;
+  --warning-400: #E5BE5C;
+  --warning-300: #ECD088;
+  --warning-200: #F2E0B0;
+  --warning-100: #F9EFD7;
+  --warning-50: #FBF6E9;
+  --primary-pastel-950: #0B171E;
+  --primary-pastel-900: #162D3C;
+  --primary-pastel-800: #2D5D7B;
+  --primary-pastel-700: #438BB7;
+  --primary-pastel-600: #80B2D1;
+  --primary-pastel-500: #CBDFEC;
+  --primary-pastel-400: #CBDFEC;
+  --primary-pastel-300: #E5EFF6;
+  --primary-pastel-200: #E5EFF5;
+  --primary-pastel-100: #F0F6FA;
+  --primary-pastel-50: #F8FAFC;
+  --secundary-950: #0D0024;
+  --secundary-900: #180042;
+  --secundary-800: #310184;
+  --secundary-700: #4901C6;
+  --secundary-600: #640CFE;
+  --secundary-500: #9150FE;
+  --secundary-400: #A571FE;
+  --secundary-300: #BB94FE;
+  --secundary-200: #CCB2F7;
+  --secundary-100: #E8DBFF;
+  --secundary-50: #F5F0FF;
+  --primary-bold-950: #03041B;
+  --primary-bold-900: #060732;
+  --primary-bold-800: #0C0D64;
+  --primary-bold-700: #12159B;
+  --primary-bold-600: #12159B;
+  --primary-bold-500: #181BCD;
+  --primary-bold-400: #6062EC;
+  --primary-bold-300: #898AF1;
+  --primary-bold-200: #ADAEF5;
+  --primary-bold-100: #D6D7FA;
+  --primary-bold-50: #EDEDFD;
+  --base-withe: #FFFFFF;
+  --base-black: #000000;
+}
+
+
+/*Tolkens */
+
+
+/*Radius tolkens*/
+:root{
+  --radius-xsmall: var(--numberscale-radius-xs);
+  --radius-small: var(--numberscale-radius-s);
+  --radius-medium: var(--numberscale-radius-m);
+  --radius-large: var(--numberscale-radius-l);
+  --radius-xlarge: var(--numberscale-radius-xl);
+  --radius-full: var(--numberscale-radius-full);
+}
+
+/*Colors tolkens light mode*/
+
+:root{
+  --pagecolors-background: var(--base-withe);
+
+--bordercolors-border-default: var(--neutral-100);
+--bordercolors-border-disable: var(--neutral-50);
+--bordercolors-border-darker: var(--neutral-700);
+
+--headercolors-nameauthor: var(--neutral-800);
+--headercolors-nameauthor-hover: var(--primary-bold-500);
+--headercolors-navtext: var(--neutral-600);
+--headercolors-vetorcheck: var(--primary-bold-500);
+--headercolors-reading-time: var(--neutral-300);
+--headercolors-hambuguer-icon: var(--neutral-600);
+
+--inicialpage-title: var(--neutral-950);
+--inicialpage-textbody: var(--neutral-600);
+--inicialpage-subtitle: var(--neutral-700);
+--inicialpage-background-img: var(--primary-pastel-500);
+
+--title-e-text-tile-text-title: var(--neutral-950);
+--title-e-text-tile-text-texto: var(--neutral-600);
+
+--sectionprojetoscards-cards-title: var(--neutral-950);
+--buttoncolors-text-button: var(--base-withe);
+--sectionprojetoscards-cards-texto: var(--neutral-300);
+--sectionprojetoscards-cards-seta-active: var(--secundary-500);
+--sectionprojetoscards-cards-seta-padrão: var(--neutral-100);
+--sectionprojetoscards-cards-infocard: var(--secundary-300);
+--sectionprojetoscards-cards-background-card: var(--base-withe);
+--sectionprojetoscards-cards-background-contain-cards: var(--base-withe);
+--sectionprojetoscards-cards-color-info-text: var(--base-withe);
+
+--sectionskiils-tecnologias-background-img-video: var(--neutral-50);
+--sectionskiils-tecnologias-title-all-tecnologias: var(--neutral-950);
+--sectionskiils-tecnologias-text-all-tecnologia: var(--neutral-600);
+
+--sectionskiils-habilidades-title: var(--neutral-950);
+--sectionskiils-habilidades-texto: var(--neutral-300);
+--sectionskiils-habilidades-seta-active: var(--secundary-500);
+--sectionskiils-habilidades-seta-padrão: var(--neutral-100);
+--sectionskiils-habilidades-infocard: var(--secundary-300);
+--sectionskiils-habilidades-background: var(--base-withe);
+
+--habilidades-card-background-contain-card: var(--primary-pastel-200);
+--habilidades-card-number: var(--neutral-950);
+--habilidades-card-title-card: var(--secundary-500);
+--habilidades-card-text-card: var(--neutral-600);
+--habilidades-card-background-card: var(--base-withe);
+
+--blog-section-card-background-contain-card: var(--base-withe);
+--blog-section-card-description-text: var(--primary-bold-700);
+--blog-section-card-title-card: var(--neutral-950);
+--blog-section-card-text-card: var(--neutral-600);
+--blog-section-card-autor-card: var(--neutral-800);
+--blog-section-card-info-post: var(--neutral-500);
+--blog-section-card-header-blog: var(--neutral-500);
+--blog-section-card-line: var(--neutral-500);
+
+--sectio-input-section-title: var(--neutral-950);
+--sectio-input-section-texto: var(--neutral-600);
+--sectio-input-section-background-section: var(--primary-pastel-400);
+
+--footer-section-title: var(--base-withe);
+--footer-section-texto: var(--base-withe);
+--footer-section-icons: var(--base-withe);
+--footer-section-background-section: var(--neutral-500);
+
+--blog-texto-inciais-e-textos-header-blog-title: var(--neutral-950);
+--blog-texto-inciais-e-textos-header-blog-description: var(--primary-pastel-800);
+--blog-texto-inciais-e-textos-textos-dos-blogs-title: var(--neutral-950);
+--blog-texto-inciais-e-textos-textos-dos-blogs-text: var(--neutral-600);
+
+--menu-hamburguer-texto-texto: var(--neutral-400);
+--menu-hamburguer-texto-texto-hover: var(--neutral-950);
+
+
+}
+
+
+/* Colors tolkens Dark mode*/
+.dark-mode {
+  --pagecolors-background: var(--base-black);
+--bordercolors-border-default: var(--neutral-100);
+--bordercolors-border-disable: var(--neutral-50);
+--bordercolors-border-darker: var(--neutral-700);
+--headercolors-nameauthor: var(--primary-bold-50);
+--headercolors-nameauthor-hover: var(--secundary-300);
+--headercolors-navtext: var(--primary-bold-50);
+--headercolors-vetorcheck: var(--primary-bold-500);
+--headercolors-reading-time: var(--secundary-100);
+--headercolors-hambuguer-icon: var(--base-withe);
+--inicialpage-title: var(--primary-bold-50);
+--inicialpage-textbody: var(--primary-bold-50);
+--inicialpage-subtitle: var(--primary-bold-50);
+--inicialpage-background-img: var(--primary-pastel-500);
+--title-e-text-tile-text-title: var(--base-withe);
+--title-e-text-tile-text-texto: var(--base-withe);
+--sectionprojetoscards-cards-title: var(--secundary-50);
+--buttoncolors-text-button: var(--base-withe);
+--sectionprojetoscards-cards-texto: var(--secundary-50);
+--sectionprojetoscards-cards-seta-active: var(--secundary-500);
+--sectionprojetoscards-cards-seta-padrão: var(--secundary-100);
+--sectionprojetoscards-cards-infocard: var(--neutral-300);
+--sectionprojetoscards-cards-background-card: var(--neutral-600);
+--sectionprojetoscards-cards-background-contain-cards: var(--neutral-800);
+--sectionprojetoscards-cards-color-info-text: var(--base-withe);
+--sectionskiils-tecnologias-background-img-video: var(--secundary-100);
+--sectionskiils-tecnologias-title-all-tecnologias: var(--secundary-50);
+--sectionskiils-tecnologias-text-all-tecnologia: var(--secundary-50);
+--sectionskiils-habilidades-title: var(--secundary-50);
+--sectionskiils-habilidades-texto: var(--secundary-50);
+--sectionskiils-habilidades-seta-active: var(--secundary-500);
+--sectionskiils-habilidades-seta-padrão: var(--secundary-100);
+--sectionskiils-habilidades-infocard: var(--secundary-300);
+--sectionskiils-habilidades-background: var(--base-black);
+--habilidades-card-background-contain-card: var(--neutral-800);
+--habilidades-card-number: var(--base-withe);
+--habilidades-card-title-card: var(--secundary-300);
+--habilidades-card-text-card: var(--base-withe);
+--habilidades-card-background-card: var(--neutral-500);
+--blog-section-card-background-contain-card: var(--base-black);
+--blog-section-card-description-text: var(--secundary-300);
+--blog-section-card-title-card: var(--base-withe);
+--blog-section-card-text-card: var(--base-withe);
+--blog-section-card-autor-card: var(--base-withe);
+--blog-section-card-info-post: var(--base-withe);
+--blog-section-card-header-blog: var(--base-withe);
+--blog-section-card-line: var(--base-withe);
+--sectio-input-section-title: var(--secundary-50);
+--sectio-input-section-texto: var(--secundary-50);
+--sectio-input-section-background-section: var(--neutral-600);
+--footer-section-title: var(--base-withe);
+--footer-section-texto: var(--base-withe);
+--footer-section-icons: var(--base-withe);
+--footer-section-background-section: var(--neutral-900);
+--blog-texto-inciais-e-textos-header-blog-title: var(--base-withe);
+--blog-texto-inciais-e-textos-header-blog-description: var(--base-withe);
+--blog-texto-inciais-e-textos-textos-dos-blogs-title: var(--base-withe);
+--blog-texto-inciais-e-textos-textos-dos-blogs-text: var(--base-withe);
+--menu-hamburguer-texto-texto: var(--base-withe);
+--menu-hamburguer-texto-texto-hover: var(--secundary-300);
+}
+
+
+
+/*Tolkens topografy*/
+
+:root{
+  /*Header*/
+  --header-headername-inter-family: var(--font-family-inter-family);
+  --header-headername-font-weight: var(--font-weight-medium);
+  --header-headername-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --header-headername-font-size: var(--font-size-7);
+  --header-headername-line-height: var(--line-height-auto);
+  --header-headertext-inter-family: var(--font-family-inter-family);
+  --header-headertext-font-weight: var(--font-weight-medium);
+  --header-headertext-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --header-headertext-font-size: var(--font-size-7);
+  --header-headertext-line-height: var(--line-height-auto);
+
+    /*Page inicial*/
+  --inicialpage-title-inter-family: var(--font-family-inter-family);
+  --inicialpage-title-font-weight: var(--font-weight-bolder);
+  --inicialpage-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --inicialpage-title-font-size: var(--font-size-1);
+  --inicialpage-title-line-height: var(--line-height-auto);
+  --inicialpage-descptiontext-inter-family: var(--font-family-inter-family);
+  --inicialpage-descptiontext-font-weight: var(--font-weight-regular);
+  --inicialpage-descptiontext-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --inicialpage-descptiontext-font-size: var(--font-size-6);
+  --inicialpage-descptiontext-line-height: var(--line-height-auto);
+  --inicialpage-subtitle-inter-family: var(--font-family-inter-family);
+  --inicialpage-subtitle-font-weight: var(--font-weight-semi-blod);
+  --inicialpage-subtitle-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --inicialpage-subtitle-font-size: var(--font-size-7);
+  --inicialpage-subtitle-line-height: var(--line-height-auto);
+
+
+    /*Buttons*/
+  --buttons-textbutton-inter-family: var(--font-family-inter-family);
+  --buttons-textbutton-font-weight: var(--font-weight-medium);
+  --buttons-textbutton-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --buttons-textbutton-font-size: var(--font-size-6);
+  --buttons-textbutton-line-height: var(--line-height-auto);
+
+    /*Section Imput*/
+  --sectioninput-title-inter-family: var(--font-family-inter-family);
+  --sectioninput-title-font-weight: var(--font-weight-semi-blod);
+  --sectioninput-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectioninput-title-font-size: var(--font-size-6);
+  --sectioninput-title-line-height: var(--line-height-auto);
+  --sectioninput-textobody-inter-family: var(--font-family-inter-family);
+  --sectioninput-textobody-font-weight: var(--font-weight-regular);
+  --sectioninput-textobody-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectioninput-textobody-font-size: var(--font-size-7);
+  --sectioninput-textobody-line-height: var(--line-height-auto);
+
+    /*Habilidade section*/
+  --sectionhabilidades-title-inter-family: var(--font-family-inter-family);
+  --sectionhabilidades-title-font-weight: var(--font-weight-bold);
+  --sectionhabilidades-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectionhabilidades-title-font-size: var(--font-size-5);
+  --sectionhabilidades-title-line-height: var(--line-height-auto);
+  --sectionhabilidades-bodytext-inter-family: var(--font-family-inter-family);
+  --sectionhabilidades-bodytext-font-weight: var(--font-weight-regular);
+  --sectionhabilidades-bodytext-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectionhabilidades-bodytext-font-size: var(--font-size-7);
+  --sectionhabilidades-bodytext-line-height: var(--line-height-auto);
+  --sectionhabilidades-numbertext-inter-family: var(--font-family-inter-family);
+  --sectionhabilidades-numbertext-font-weight: var(--font-weight-regular);
+  --sectionhabilidades-numbertext-letter-spacing: var(--letter-spacing-letterspacing-tight);
+  --sectionhabilidades-numbertext-font-size: var(--font-size-10);
+
+  --header-headername-line-height: var(--line-height-auto);
+
+  --sectionhabilidades-numbertext-line-height: var(--line-height-auto);
+
+      /*Footer*/
+  --footer-licencetext-inter-family: var(--font-family-inter-family);
+  --footer-licencetext-font-weight: var(--font-weight-regular);
+  --footer-licencetext-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --footer-licencetext-font-size: var(--font-size-9);
+  --footer-licencetext-line-height: var(--line-height-auto);
+  --footer-bodytext-inter-family: var(--font-family-inter-family);
+  --footer-bodytext-font-weight: var(--font-weight-regular);
+  --footer-bodytext-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --footer-bodytext-font-size: var(--font-size-7);
+  --footer-bodytext-line-height: var(--line-height-auto);
+
+    /*Descrição todas a section*/
+  --desciptionallsections-title-inter-family: var(--font-family-inter-family);
+  --desciptionallsections-title-font-weight: var(--font-weight-bold);
+  --desciptionallsections-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --desciptionallsections-title-font-size: var(--font-size-2);
+  --desciptionallsections-title-line-height: var(--line-height-auto);
+  --desciptionallsections-bodytext-inter-family: var(--font-family-inter-family);
+  --desciptionallsections-bodytext-font-weight: var(--font-weight-regular);
+  --desciptionallsections-bodytext-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --desciptionallsections-bodytext-font-size: var(--font-size-7);
+  --desciptionallsections-bodytext-line-height: var(--line-height-auto);
+
+    /*Projetos*/
+  --sectionprojetoscards-title-inter-family: var(--font-family-inter-family);
+  --sectionprojetoscards-title-font-weight: var(--font-weight-regular);
+  --sectionprojetoscards-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectionprojetoscards-title-font-size: var(--font-size-6);
+  --sectionprojetoscards-title-line-height: var(--line-height-auto);
+  --sectionprojetoscards-description-inter-family: var(--font-family-inter-family);
+  --sectionprojetoscards-description-font-weight: var(--font-weight-light);
+  --sectionprojetoscards-description-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectionprojetoscards-description-font-size: var(--font-size-7);
+  --sectionprojetoscards-description-line-height: var(--line-height-auto);
+
+    /*Tecnologias*/
+  --sectiontecnologias-title-inter-family: var(--font-family-inter-family);
+  --sectiontecnologias-title-font-weight: var(--font-weight-bold);
+  --sectiontecnologias-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectiontecnologias-title-font-size: var(--font-size-4);
+  --sectiontecnologias-title-line-height: var(--line-height-auto);
+  --sectiontecnologias-description-inter-family: var(--font-family-inter-family);
+  --sectiontecnologias-description-font-weight: var(--font-weight-regular);
+  --sectiontecnologias-description-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectiontecnologias-description-font-size: var(--font-size-7);
+  --sectiontecnologias-description-line-height: var(--line-height-auto);
+
+    /*Card-blog*/
+  --sectonblog-card-blog-title-inter-family: var(--font-family-inter-family);
+  --sectonblog-card-blog-title-font-weight: var(--font-weight-medium);
+  --sectonblog-card-blog-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectonblog-card-blog-title-font-size: var(--font-size-5);
+  --sectonblog-card-blog-title-line-height: var(--line-height-auto);
+  --sectonblog-card-blog-temadescription-inter-family: var(--font-family-inter-family);
+  --sectonblog-card-blog-temadescription-font-weight: var(--font-weight-medium);
+  --sectonblog-card-blog-temadescription-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectonblog-card-blog-temadescription-font-size: var(--font-size-8);
+  --sectonblog-card-blog-temadescription-line-height: var(--line-height-auto);
+  --sectonblog-card-blog-bodytext-inter-family: var(--font-family-inter-family);
+  --sectonblog-card-blog-bodytext-font-weight: var(--font-weight-light);
+  --sectonblog-card-blog-bodytext-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectonblog-card-blog-bodytext-font-size: var(--font-size-7);
+  --sectonblog-card-blog-bodytext-line-height: var(--line-height-auto);
+  --sectonblog-card-blog-authorname-inter-family: var(--font-family-inter-family);
+  --sectonblog-card-blog-authorname-font-weight: var(--font-weight-medium);
+  --sectonblog-card-blog-authorname-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectonblog-card-blog-authorname-font-size: var(--font-size-8);
+  --sectonblog-card-blog-authorname-line-height: var(--line-height-auto);
+  --sectonblog-card-blog-readingaatatime-inter-family: var(--font-family-inter-family);
+  --sectonblog-card-blog-readingaatatime-font-weight: var(--font-weight-light);
+  --sectonblog-card-blog-readingaatatime-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectonblog-card-blog-readingaatatime-font-size: var(--font-size-9);
+  --sectonblog-card-blog-readingaatatime-line-height: var(--line-height-auto);
+  --sectonblog-main-title-inter-family: var(--font-family-inter-family);
+  --sectonblog-main-title-font-weight: var(--font-weight-bold);
+  --sectonblog-main-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectonblog-main-title-font-size: var(--font-size-2);
+  --sectonblog-main-title-line-height: var(--line-height-auto);
+  --sectonblog-popular-articles-title-inter-family: var(--font-family-inter-family);
+  --sectonblog-popular-articles-title-font-weight: var(--font-weight-medium);
+  --sectonblog-popular-articles-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectonblog-popular-articles-title-font-size: var(--font-size-6);
+  --sectonblog-popular-articles-title-line-height: var(--line-height-auto);
+  --sectonblog-written-by-inter-family: var(--font-family-inter-family);
+  --sectonblog-written-by-font-weight: var(--font-weight-light);
+  --sectonblog-written-by-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectonblog-written-by-font-size: var(--font-size-8);
+  --sectonblog-written-by-line-height: var(--line-height-auto);
+
+
+      /*Header*/
+  --header-headerreading-inter-family: var(--font-family-inter-family);
+  --header-headerreading-font-weight: var(--font-weight-light);
+  --header-headerreading-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --header-headerreading-font-size: var(--font-size-9);
+  --header-headerreading-line-height: var(--line-height-auto);
+
+      /*Cards projetos*/
+  --sectionprojetoscards-textinfo-inter-family: var(--font-family-inter-family);
+  --sectionprojetoscards-textinfo-font-weight: var(--font-weight-medium);
+  --sectionprojetoscards-textinfo-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --sectionprojetoscards-textinfo-font-size: var(--font-size-8);
+  --sectionprojetoscards-textinfo-line-height: var(--line-height-auto);
+
+
+  /*Imput*/
+  --input-section-title-inter-family: var(--font-family-inter-family);
+  --input-section-title-font-weight: var(--font-weight-semi-blod);
+  --input-section-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --input-section-title-font-size: var(--font-size-6);
+  --input-section-title-line-height: var(--line-height-auto);
+  --input-section-text-inter-family: var(--font-family-inter-family);
+  --input-section-text-font-weight: var(--font-weight-light);
+  --input-section-text-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --input-section-text-font-size: var(--font-size-7);
+  --input-section-text-line-height: var(--line-height-auto);
+  --input-section-input-insid-text-inter-family: var(--font-family-inter-family);
+  --input-section-input-insid-text-font-weight: var(--font-weight-regular);
+  --input-section-input-insid-text-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --input-section-input-insid-text-font-size: var(--font-size-8);
+  --input-section-input-insid-text-line-height: var(--line-height-auto);
+
+      /*BLog texto*/
+  --blog-textos-title-main-inter-family: var(--font-family-inter-family);
+  --blog-textos-title-main-font-weight: var(--font-weight-semi-blod);
+  --blog-textos-title-main-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --blog-textos-title-main-font-size: var(--font-size-3);
+  --blog-textos-title-main-line-height: var(--line-height-auto);
+  --blog-textos-description-inter-family: var(--font-family-inter-family);
+  --blog-textos-description-font-weight: var(--font-weight-regular);
+  --blog-textos-description-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --blog-textos-description-font-size: var(--font-size-8);
+  --blog-textos-description-line-height: var(--line-height-auto);
+
+    /*Conteudo dos blogs*/
+  --conteudo-dos-blogs-title-inter-family: var(--font-family-inter-family);
+  --conteudo-dos-blogs-title-font-weight: var(--font-weight-semi-blod);
+  --conteudo-dos-blogs-title-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --conteudo-dos-blogs-title-font-size: var(--font-size-5);
+  --conteudo-dos-blogs-title-line-height: var(--line-height-auto);
+  --conteudo-dos-blogs-texto-inter-family: var(--font-family-inter-family);
+  --conteudo-dos-blogs-texto-font-weight: var(--font-weight-regular);
+  --conteudo-dos-blogs-texto-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --conteudo-dos-blogs-texto-font-size: var(--font-size-6);
+  --conteudo-dos-blogs-texto-line-height: var(--line-height-auto);
+  --conteudo-dos-blogs-subtitle-inter-family: var(--font-family-inter-family);
+  --conteudo-dos-blogs-subtitle-font-weight: var(--font-weight-semi-blod);
+  --conteudo-dos-blogs-subtitle-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --conteudo-dos-blogs-subtitle-font-size: var(--font-size-6);
+  --conteudo-dos-blogs-subtitle-line-height: var(--line-height-auto);
+
+    /*MEnu hamburguer*/
+  --menu-hamburgue-texto-inter-family: var(--font-family-inter-family);
+  --menu-hamburgue-texto-font-weight: var(--font-weight-semi-blod);
+  --menu-hamburgue-texto-letter-spacing: var(--letter-spacing-letterspacing-normal);
+  --menu-hamburgue-texto-font-size: var(--font-size-3);
+  --menu-hamburgue-texto-line-height: var(--line-height-auto);
+}
